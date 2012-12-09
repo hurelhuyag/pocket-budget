@@ -68,7 +68,9 @@
         <div id="edit-cont" class="right">
             <%@include file="edit.jsp"%>
         </div>
-
+        <div class="foot">
+            <a href="https://code.google.com/p/pocket-budget" target="_blank">source code</a>
+        </div>
     </div>
 </body>
 </html>
