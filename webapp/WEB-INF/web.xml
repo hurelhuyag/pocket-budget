@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="
+            http://java.sun.com/xml/ns/javaee
+		    http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+           version="2.5">
+
+    <servlet>
+        <servlet-name>mainServlet</servlet-name>
+        <servlet-class>org.hurelhuyag.pocketbudget.web.MainServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>editServlet</servlet-name>
+        <servlet-class>org.hurelhuyag.pocketbudget.web.EditServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>listServlet</servlet-name>
+        <servlet-class>org.hurelhuyag.pocketbudget.web.ListServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>mobileServlet</servlet-name>
+        <servlet-class>org.hurelhuyag.pocketbudget.web.MobileServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>mainServlet</servlet-name>
+        <url-pattern>/main</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>editServlet</servlet-name>
+        <url-pattern>/edit</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>listServlet</servlet-name>
+        <url-pattern>/list</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>mobileServlet</servlet-name>
+        <url-pattern>/m</url-pattern>
+    </servlet-mapping>
+
+</web-app>
